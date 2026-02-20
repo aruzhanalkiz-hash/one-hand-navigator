@@ -1,1 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "One Hand Navigator",
+  "version": "0.1.0",
+  "description": "One-hand and keyboard-first navigation overlay for improved web accessibility.",
+  "permissions": ["activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "Toggle One Hand Navigator"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
 
