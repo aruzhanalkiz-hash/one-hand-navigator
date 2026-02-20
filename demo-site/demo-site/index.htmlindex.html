@@ -1,1 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>One Hand Navigator Demo</title>
+  <style>
+    body { font-family: system-ui; padding: 24px; }
+    .tiny button { font-size: 10px; padding: 2px 4px; margin: 2px; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; max-width: 900px; }
+    .card { border: 1px solid #ddd; border-radius: 12px; padding: 16px; }
+    input, select { width: 100%; padding: 8px; margin: 6px 0 12px; }
+  </style>
+</head>
+<body>
+  <h1>One Hand Navigator Demo Page</h1>
+  <p>This page is intentionally annoying: tiny buttons, dense layout, lots of targets.</p>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Tiny Buttons</h2>
+      <div class="tiny">
+        <button>OK</button><button>Cancel</button><button>Save</button><button>More</button>
+        <button>Help</button><button>Next</button><button>Back</button><button>Done</button>
+      </div>
+      <p><a href="#form">Jump to form</a></p>
+    </div>
+
+    <div class="card" id="form">
+      <h2>Form</h2>
+      <label>Name</label>
+      <input placeholder="Type here..." />
+      <label>Program</label>
+      <select>
+        <option>Computer Science</option>
+        <option>Engineering</option>
+        <option>Science</option>
+      </select>
+      <button style="font-size:11px;padding:3px 6px;">Submit (tiny)</button>
+    </div>
+  </div>
+
+  <hr />
+  <p><b>Controls:</b> Toggle = Alt+Shift+O, Next = Alt+J, Prev = Alt+K, Click = Alt+Enter, Exit = Esc</p>
+</body>
+</html>
 
